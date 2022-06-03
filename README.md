@@ -117,7 +117,8 @@ The following data model was created based on the data sets provided. Given the 
 ### Step 4: Run ETL to Model the Data
 
 **Data Dictionary:**
-==The Data Dictionary is provided in the Data_dictionary.xlsx file in the git repository.==
+
+The Data Dictionary is provided in the Data_dictionary.xlsx file in the git repository.
 
 **How to Execute:**
 1. Download repository
