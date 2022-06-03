@@ -50,7 +50,6 @@ These data sets will be prepared in such a way to allow data analysts to easily 
 		<td>-Arrival date and departure dates are in Julian days starting from 1960. <br> 
 		-Missing departure date.
 		</td>
-		
 	</tr>
 </tbody>
 </table>
