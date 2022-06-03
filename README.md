@@ -13,8 +13,9 @@ For this project the following data sets were used:
 | us-cities-demographics.csv | Comprises of data of US cities and their associated demographics |
 | part-*-b9542815-7a8d-45fc-9c67-c9c5007ad0d4-c000.snappy.parquet | Contains rows of travelers and their associated information such as where they have landed and when |
     
-> These data sets will be prepared in such a way to allow data analysts to easily maneuver and join the data as they see fit. This will means the data will not be over normalized. The structure and data will help the analysts find patterns and useful information for better understanding of the incoming and existing population of the US.
+These data sets will be prepared in such a way to allow data analysts to easily maneuver and join the data as they see fit. This will means the data will not be over normalized. The structure and data will help the analysts find patterns and useful information for better understanding of the incoming and existing population of the US.
 
+-----
 
 ### Step 2: Explore and Assess the Data
 
@@ -54,6 +55,7 @@ For this project the following data sets were used:
 </tbody>
 </table>
 
+-----
 
 ### Step 3: Define the Data Model
 
@@ -111,6 +113,7 @@ The following data model was created based on the data sets provided. Given the 
 - Rename columns removing i94 from names.
 - Cast all columns to their appropriate data type.
 
+-----
 
 ### Step 4: Run ETL to Model the Data
 
@@ -124,12 +127,14 @@ The following data model was created based on the data sets provided. Given the 
 4. If using Jupyter execute line by line using file `SparkETL_Main_v3.ipynb`.                   
    Otherwise submit the spark job: 
    `$SPARK_HOME/bin/spark-submit SparkETL_Main_v3.py`
+   
+-----
 
 ### Step 5: Define the Data Model
 
 The goal of this project was to create an ETL job which takes raw data from multiple data sets, manipulates it, and inserts it into a structured model. This in turn gives analysts and reporters clean and easily navigable data to use.
 
-**Tools Used**
+ -- **Tools Used** --
 
 Spark was used to create the ETL job. The reason for picking Spark is due to the large volume of data that needs to be processed. Spark is an excellent tool that eases parallelism, distribution, and in memory processing therefore finishing the job faster.
 
@@ -140,11 +145,11 @@ Airflow thought not currently used can be used in the future to automate the exe
 In order to incorporate Airflow and repetitive processing using the same ETL job the job would need to be modified to compare existing data in the Redshift Database and the new data before inserting into the database.
 
 
-**Propose how often the data should be updated and why?**
+-- **Propose how often the data should be updated and why?** --
 
 Data should be updated at a frequency which makes sense to the end users and as often as the data sets get refreshed. Meaning that if the analysts/reporters only use the data once a year there is no meaning of updating it hourly. The same logic concerns the data sets. If the data sets provided by 3rd party are only updated 3 times a year, nothing will be gained by running the ETL job daily.
 
-**Include a description of how you would approach the problem differently under the following scenarios:**
+-- **Include a description of how you would approach the problem differently under the following scenarios:** --
 
 If the data that requires processing was to be increased by 100x clustering on the Spark application would be setup. A master and slave relationship would need to be configured hence distributing the data across multiple nodes to be processed therefore reducing the amount of time which it takes.  
 
