@@ -118,7 +118,7 @@ The following data model was created based on the data sets provided. Given the 
 
 **Data Dictionary:**
 
-The Data Dictionary is provided in the Data_dictionary.xlsx file in the git repository.
+The Data Dictionary is provided in the `Diagram\Data_dictionary.xlsx` file.
 
 **How to Execute:**
 1. Download repository
