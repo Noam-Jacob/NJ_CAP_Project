@@ -39,7 +39,7 @@ These data sets will be prepared in such a way to allow data analysts to easily 
 	</tr>
 	<tr>
 		<td>GlobalLandTemperaturesByState.csv</td>
-		<td>-No Key to distinguish rows.<br>-Empty values for Average Tempature and Average Tempature Uncertainty<br>-Date column contains all date fields, year, month, day. These need to be separted<br> -Multiple columns are identical.</td>
+		<td>-No Key to distinguish rows.<br>-Empty values for Average Tempature and Average Tempature Uncertainty<br>-Date column contains all date fields, year, month, day. These need to be separted<br> -Multiple columns are identical. <br> -Some Average Temperatures are too long.</td>
 	</tr>
 	<tr>
 		<td>us-cities-demographics.csv</td>
@@ -122,7 +122,7 @@ The Data Dictionary is provided in the Data_dictionary.xlsx file in the git repo
 
 **How to Execute:**
 1. Download repository
-2. Modify config.py with your personal S3 Access and Redshift information. 
+2. Modify config.py with your personal S3 Access and Redshift information. Also set limit of Data frame rows inserted into Database. Dataset location also is in here.
 3. Verify Spark is installed on the environment that will be used to execute the ETL job (Local machine or Jupyter). 
 4. If using Jupyter execute line by line using file `SparkETL_Main_v3.ipynb`.                   
    Otherwise submit the spark job: 
