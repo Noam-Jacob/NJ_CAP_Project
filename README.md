@@ -13,7 +13,7 @@ For this project the following data sets were used:
 | us-cities-demographics.csv | Comprises of data of US cities and their associated demographics |
 | part-*-b9542815-7a8d-45fc-9c67-c9c5007ad0d4-c000.snappy.parquet | Contains rows of travelers and their associated information such as where they have landed and when |
     
-These data sets will be prepared in such a way to allow data analysts to easily maneuver and join the data as they see fit. This will means the data will not be over normalized. The structure and data will help the analysts find patterns and useful information for better understanding of the incoming and existing population of the US.
+These data sets will be prepared in such a way to allow data analysts to easily maneuver and join the data as they see fit. This will mean the data will not be over normalized. The structure and data will help the analysts find patterns and useful information for better understanding of the incoming and existing population of the US.
 
 -----
 
