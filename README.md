@@ -63,7 +63,7 @@ The following data model was created based on the data sets provided. Given the 
 
 **Data Model**
 
-![](Diagram/Diagramv4.JPG)
+
 
 
 1. PORTCODES Table
