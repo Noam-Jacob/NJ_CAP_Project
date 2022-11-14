@@ -10,7 +10,7 @@ s3aSecretKey = "" #Secret Key
 s3aEndpoint = "s3.amazonaws.com"
 
 #File/Dataset locations
-prtlCodes_file = "Datasets/Portal_Codes/prtlCodes.json"
+prtlCodes_file = "Datasets/Port_Codes/prtlCodes.json"
 stateCodes_file = "Datasets/States/State_Codes.csv"
 airportCodes_file = "Datasets/Airport_Code/airport-codes_csv.csv"
 globalLandTemp_file = "Datasets/Tempature/GlobalLandTemperaturesByState.csv"
