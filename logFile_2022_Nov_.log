@@ -1,0 +1,5 @@
+2022-11-15 17:45:44,019 - SparkJob_001 - INFO - PORTCODES Dataframe number of partitions and count: 1 , 582
+2022-11-15 17:45:45,455 - SparkJob_001 - INFO - AIRPORTS Dataframe number of partitions and count: 2 , 15166
+2022-11-15 17:45:48,224 - SparkJob_001 - INFO - USATEMP Dataframe number of partitions and count: 6 , 141930
+2022-11-15 17:45:50,462 - SparkJob_001 - INFO - USADEMOGRAPHICS Dataframe number of partitions and count: 1 , 114
+2022-11-15 17:45:52,932 - SparkJob_001 - INFO - IMMIGRATION Dataframe number of partitions and count: 7 , 2994505

@@ -133,13 +133,13 @@ The Data Dictionary is provided in the `Diagram\Data_dictionary.xlsx` file.
 
 ### Step 5: Define the Data Model
 
-The goal of this project was to create an ETL job which takes raw data from multiple data sets, manipulates it, and inserts it into a structured model. This in turn gives analysts and reporters clean and easily navigable data to use.
+The goal of this project was to create an ETL job which takes raw data from multiple data sets, manipulates it, and inserts it into a structured model. This in turn gives analysts clean and easily navigable data to use.
 
  -- **Tools Used** --
 
 Spark was used to create the ETL job. The reason for picking Spark is due to the large volume of data that needs to be processed. Spark is an excellent tool that eases parallelism, distribution, and in memory processing therefore finishing the job faster.
 
-Redshift was used as the database in this project because it is a columnar database which is perfect for warehousing data to be used by analysts and reporters given that data is selected by columns and not by rows. Redshift also makes it easy to increase or reduce the amount of hardware provided if the capacity and access of data is changed.
+Redshift was used as the database in this project because it is a columnar database which is perfect for warehousing data to be used by analysts given that data is selected by columns and not by rows. Redshift also makes it easy to increase or reduce the amount of hardware provided if the capacity and access of data is changed.
 
 Airflow thought not currently used can be used in the future to automate the execution of this ETL job if it required to be executed on a repeating bases. Using Airflow the new or updated data set files would be placed or determined in the correct location for the ETL Spark job to use.
 
@@ -148,7 +148,7 @@ In order to incorporate Airflow and repetitive processing using the same ETL job
 
 -- **Propose how often the data should be updated and why?** --
 
-Data should be updated at a frequency which makes sense to the end users and as often as the data sets get refreshed. Meaning that if the analysts/reporters only use the data once a year there is no meaning of updating it hourly. The same logic concerns the data sets. If the data sets provided by 3rd party are only updated 3 times a year, nothing will be gained by running the ETL job daily.
+Data should be updated at a frequency which makes sense to the end users and as often as the data sets get refreshed. Meaning that if the analysts only use the data once a year there is no meaning of updating it hourly. The same logic concerns the data sets. If the data sets provided by 3rd party are only updated 3 times a year, nothing will be gained by running the ETL job daily.
 
 -- **Include a description of how you would approach the problem differently under the following scenarios:** --
 
