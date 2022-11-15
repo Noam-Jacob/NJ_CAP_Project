@@ -18,4 +18,4 @@ usDemograph_file = "Datasets/US_Demographics/us-cities-demographics.csv"
 immig_file = "Datasets/Immigration_Data/*.snappy.parquet"
 
 #Limit the inserts into the Database to 10, True or False
-limitDFtoTen = True
+limitDFtoTen = False

@@ -139,7 +139,7 @@ The goal of this project was to create an ETL job which takes raw data from mult
 
 Spark was used to create the ETL job. The reason for picking Spark is due to the large volume of data that needs to be processed. Spark is an excellent tool that eases parallelism, distribution, and in memory processing therefore finishing the job faster.
 
-Redshift was used as the database in this project because it is a columnar database which is perfect for warehousing data to be used by analysts  given that data is selected by columns and not by rows. Redshift also makes it easy to increase or reduce the amount of hardware provided if the capacity and access of data is changed.
+Redshift was used as the database in this project because it is a columnar database which is perfect for warehousing data to be used by analysts given that data is selected by columns and not by rows. Redshift also makes it easy to increase or reduce the amount of hardware provided if the capacity and access of data is changed.
 
 Airflow thought not currently used can be used in the future to automate the execution of this ETL job if it required to be executed on a repeating bases. Using Airflow the new or updated data set files would be placed or determined in the correct location for the ETL Spark job to use.
 
