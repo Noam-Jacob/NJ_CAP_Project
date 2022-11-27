@@ -62,9 +62,6 @@ The following data model was created based on the data sets provided. Given the 
 
 
 **Data Model**
-This is by no means intended for BI or reporting, but rather for analysts to retrieve the data they seem most fit, at ease.
-
-![](Diagram/Diagramv4.JPG)
 
 
 1. PORTCODES Table
